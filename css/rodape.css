@@ -1,0 +1,194 @@
+/****************************************************************
+*************************CSS NEWSLETTER**************************
+****************************************************************/
+
+.newsletter-container {
+    background: #BFB0A3;
+    padding: 1.625rem 0;
+    text-align: center;
+}
+
+.newsletter {
+    min-width: 74%;
+    
+    text-align: center;
+}
+.sede-esportiva-text
+.newsletter h2 {
+    font-weight: 510;
+    line-height: 100%;
+    font-size: 45px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.newsletter-container input::placeholder {
+    color: #BFB0A3;
+}
+
+.newsletter-container input::-moz-placeholder {
+    color: #BFB0A3;
+}
+
+.newsletter-container input::-webkit-placeholder {
+    color: #BFB0A3;
+}
+
+.newsletter-container input {
+    height: 55px;
+    
+    border-radius: 10px;
+    color: #BFB0A3;
+    font-size: 30px;
+    border: 0;
+    outline: 0;
+    padding-left: 15px;
+}
+
+.newsletter-container .form-name {
+    width: 100%;
+   
+   
+}
+
+.newsletter-container .form-email {
+    width: 100%;
+    
+    
+}
+
+.newsletter-container .form-submit {
+    color: white;
+    background: #00DF40;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0px 15px;
+}
+
+
+/****************************************************************
+*************************CSS FOOTER******************************
+****************************************************************/
+
+.footer-desc-container.container {
+    min-width: 85%;
+    padding: 15px 150px;
+    width:425px;
+}
+
+.footer-container {
+    background: #242B40;
+}
+
+.direitos-reservados h2 {
+    color: #FFFFFF;
+    font-size: 1rem !important;
+    text-align: center;
+}
+
+.sede-social-text,
+.sede-esportiva-text {
+    color: white;
+    margin-top: 20px;
+}
+
+.row.footer-desc-body {
+    display: flex;
+    align-items: flex-end;
+}
+
+.sede-social-text h2,
+.sede-esportiva-text h2 {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.sede-social-text h3,
+.sede-esportiva-text h3 {
+    font-size: 30px;
+    line-height: 100%;
+    font-weight: 600;
+    margin-top: 55px;
+}
+
+.sede-social-text p,
+.sede-esportiva-text p {
+    font-size: 1rem;
+    line-height: 40px;
+    margin-top: 15px;
+    max-width: 550px;
+}
+
+.vinci {
+    height: 76px;
+    background-color: white;
+    font-size: 30px;
+   
+}
+
+.vinci .itens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vinci .itens img {
+    
+    text-align: center;
+}
+@media (max-width: 320px){
+    .vinci {
+        height: 167px;
+        background-color: white;
+        font-size: 17px;
+        padding-top: 57px;
+    }
+    .sede-social-text h2, .sede-esportiva-text h2 {
+        font-size: 1rem;
+        line-height: 50px;
+        font-weight: 600;
+    }
+    .direitos-reservados h2 {
+        color: #FFFFFF;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 1024px){
+    .newsletter-container .form-name {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .newsletter-container .form-email {
+        width: 100%;
+        
+        
+    }
+
+}
+
+@media (max-width: 991px){
+    
+    
+    .newsletter-container .form-email {
+        width: 100%;
+       
+    }
+
+}
+@media (max-width: 425px){
+    .newsletter-container .form-name {
+        width: 100%;
+        max-width: 370px;
+        margin-bottom: 10px;
+    }
+    .row {
+        
+         width: 425px; 
+    }
+}

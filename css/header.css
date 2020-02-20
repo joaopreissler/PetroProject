@@ -1,0 +1,93 @@
+/****************************************************************
+*************************CSS TOPO NOME DO CLUB*******************
+****************************************************************/
+
+.club-name-container {
+    min-width: 100%;
+    background: #F2F2F2;
+    height: 125px;
+    line-height: 125px;
+    font-size: 47px;
+    color: #242B40;
+    font-weight: bold;
+    padding-left: 348px;
+}
+
+
+/****************************************************************
+*************************CSS TOPO LOGO***************************
+****************************************************************/
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 8%;
+    z-index: 10;
+}
+
+.logo-img {
+    max-width: 150px;
+}
+
+
+/****************************************************************
+*************************CSS HEADER E MENU***********************
+****************************************************************/
+
+.container-topo.container {
+    display: inline-flex;
+}
+
+.header-back {
+    background: #242B40;
+    position: sticky;
+    z-index: 5;
+    height: 80px;
+}
+
+.container-menu ul {
+    margin-left: 333px;
+    width: 800px;
+    margin-top: 10px;
+}
+
+.container-menu ul li {
+    display: inline;
+    padding-right: 40px;
+}
+
+.menu-link a {
+    font-size: 20px;
+    color: #BFB0A3;
+}
+
+.social-icons {
+    display: flex;
+    padding-left: 292px;
+}
+
+.container-social .social-icons li a img {
+    height: 30px;
+    width: 30px;
+}
+
+.container-social .social-icons li {
+    padding-right: 30px;
+    fill: #BFB0A3;
+    margin-top: 8px;
+}
+
+.seach-container {
+    padding-left: 70px;
+    margin-top: 8px;
+}
+
+.pofile-container {
+    padding-left: 106px;
+    margin-top: 8px;
+}
+
+
+/****************************************************************
+*************************CSS HEADER E MENU***********************
+****************************************************************/

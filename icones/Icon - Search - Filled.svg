@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.637" height="30.637" viewBox="0 0 30.637 30.637">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="30.637" height="30.637" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Icon_Search_Filled" data-name="Icon / Search / Filled" clip-path="url(#clip-path)">
+    <rect id="Box" fill="none"/>
+    <path id="Caminho_402" data-name="Caminho 402" d="M926.732-1398.52h-1.19l-.413-.41a9.694,9.694,0,0,0,2.349-6.332,9.738,9.738,0,0,0-9.739-9.739,9.738,9.738,0,0,0-9.739,9.739,9.739,9.739,0,0,0,9.739,9.739,9.7,9.7,0,0,0,6.33-2.346l.414.41v1.187l7.489,7.477,2.234-2.234-7.473-7.491Zm-8.993,0a6.741,6.741,0,0,1-6.742-6.742,6.742,6.742,0,0,1,6.742-6.742,6.743,6.743,0,0,1,6.742,6.742,6.742,6.742,0,0,1-6.742,6.742Z" transform="translate(-905.958 1417.043)" fill="#bfb0a3" fill-rule="evenodd"/>
+  </g>
+</svg>

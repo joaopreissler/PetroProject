@@ -1,0 +1,61 @@
+
+/* 19/12 17:50 */
+
+/* 19/12 17:50 AGORA VAI AGORA */
+
+.carouseltitulo{
+text-align: left;
+font-size: 28px;
+position: absolute;
+left: -7%;
+top: -8px;
+font-weight: 600;
+}
+
+.botaocarousel{
+  position: absolute;
+  bottom: 10%;
+  right: 0%;
+  border: 3px solid white;
+  padding: 7px;
+  border-radius: 16px;
+  font-size: 23px;
+  font-weight: 600;
+    
+}
+
+.fuipropetro{position: absolute;
+  left: -7%;
+  top: 8%;
+  font-size: 50px;
+  max-width: 167px;
+  text-align: left;
+  font-weight: 600;}
+
+  .garanta{
+    position: absolute;
+    bottom: 30%;
+    right: 0%;
+    text-align: right;
+    font-weight: 600;
+    max-width: 106px;
+    font-size: 17px;
+}
+@media (max-width: 768px){
+.d-md-block {
+    display: block!important;
+}
+}  
+@media (max-width: 425px){
+
+  .carouseltitulo {
+    
+    top: 3%;
+    
+}
+.fuipropetro{
+ 
+  top: 11%;
+  }
+
+}

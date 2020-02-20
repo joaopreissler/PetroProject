@@ -1,0 +1,897 @@
+/****************************************************************
+*************************CSS LAMINA ANIMADA**********************
+****************************************************************/
+
+.lamina *,
+.lamina *:before,
+.lamina *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+}
+
+.lamina::before,
+.lamina::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    background-color: #242B40;
+    opacity: 0.5;
+    -webkit-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+}
+
+.lamina:before {
+    -webkit-transform: skew(45deg) translateX(-80%);
+    transform: skew(45deg) translateX(-80%);
+}
+
+.lamina:after {
+    -webkit-transform: skew(-45deg) translateX(-70%);
+    transform: skew(-45deg) translateX(-70%);
+}
+
+.sublamina:before,
+.sublamina:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #242B40;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    content: '';
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.sublamina:before {
+    -webkit-transform: skew(45deg) translateX(-70%);
+    transform: skew(45deg) translateX(-70%);
+}
+
+.sublamina:after {
+    -webkit-transform: skew(-45deg) translateX(-60%);
+    transform: skew(-45deg) translateX(-60%);
+}
+
+.lamina:hover:before,
+.lamina.hover:before {
+    -webkit-transform: skew(45deg) translateX(-50%);
+    transform: skew(45deg) translateX(-50%);
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+.lamina:hover:after,
+.lamina.hover:after {
+    -webkit-transform: skew(-45deg) translateX(-40%);
+    transform: skew(-45deg) translateX(-40%);
+}
+
+.lamina:hover .sublamina:before,
+.lamina.hover .sublamina:before {
+    -webkit-transform: skew(45deg) translateX(-35%);
+    transform: skew(45deg) translateX(-35%);
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+.lamina:hover .sublamina:after,
+.lamina.hover .sublamina:after {
+    -webkit-transform: skew(-45deg) translateX(-25%);
+    transform: skew(-45deg) translateX(-25%);
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.sublamina {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    bottom: 0;
+}
+
+
+/****************************************************************
+*************************CSS BANNER TOPO HOME********************
+****************************************************************/
+
+.banner-principal-home {
+    position: relative;
+}
+
+.banner-principal-container .slick-dots {
+    position: absolute;
+    bottom: 380px;
+    left: 385px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.banner-principal-container .slick-dots li {
+    display: inline-block;
+}
+
+.banner-principal-container .slick-dots li.slick-active button {
+    background: white;
+}
+
+.banner-principal-container .slick-dots li button {
+    border-radius: 50%;
+    border: 4px solid white;
+    background: none;
+    display: block;
+    width: 25px;
+    height: 25px;
+    font-size: 0;
+    margin: 0px 5px;
+}
+
+.banner-home-submenu {
+    display: none;
+    margin-bottom: 15px;
+    padding-left: 25px;
+}
+
+.menu-banner-principal {
+    position: absolute;
+    display: none;
+    bottom: 80px;
+    left: 260px;
+}
+
+.menu-banner-principal ul h1 {
+    color: white;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 750;
+    margin-bottom: 30px;
+}
+
+.banner-home-submenu li {
+    display: inline-block;
+}
+
+.banner-home-menu {
+    color: white;
+    font-size: 26px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+    padding-left: 15px;
+    transition: 0.5s;
+}
+
+.banner-home-menu:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.background {
+    border-left: 10px solid white;
+}
+
+.banner-home-submenu .banner-menu-link {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.banner-menu-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.banner-img-container {
+    height: calc(100vh - 240px);
+    min-height: 960px;
+    max-height: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-principal-container button.slick-prev.slick-arrow {
+    left: 0%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    background: url(../icones/ic_chevron_left.svg);
+    /* put the height and width of your image here */
+    height: 100px;
+    width: 91px;
+    border: none;
+    background-size: 100%;
+    text-indent: -10000px;
+}
+
+.banner-principal-container .slick-next.slick-arrow {
+    right: 0%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    background: url(../icones/ic_chevron_right.svg);
+    /* put the height and width of your image here */
+    height: 100px;
+    width: 91px;
+    border: none;
+    background-size: 100%;
+    text-indent: 10000px;
+}
+
+.banner-text-container {
+    position: absolute;
+    top: 0;
+    color: white;
+    padding: 120px 0px 0px 260px;
+}
+
+.banner-text-container h1 {
+    color: #F2F2F2;
+    font-size: 96px;
+    line-height: 100%;
+    font-weight: 750;
+    display: block;
+    text-align: left;
+}
+
+.banner-text-container h1 span {
+    font-size: 177px;
+    display: block;
+    font-weight: 100;
+    position: relative;
+    left: -10px;
+    line-height: 100%;
+}
+
+.banner-text-container p {
+    font-size: 39px;
+    line-height: 100%;
+    max-width: 635px;
+    color: #F2F2F2;
+}
+
+.banner-text-container .banner-link {
+    height: 85px;
+    line-height: 75px;
+    display: block;
+    width: 100%;
+    max-width: 262px;
+    color: white;
+    border: 6px solid #F2F2F2;
+    border-radius: 18px;
+    margin-top: 35px;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+
+/****************************************************************
+*************************CSS RELEASE ****************************
+****************************************************************/
+
+.release-social {
+    min-width: 85%;
+}
+
+.release-social h1 {
+    font-size: 70px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 55px;
+    text-align: center;
+    line-height: 100%;
+}
+
+.release-social p {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 35px;
+}
+
+.release-social .line-break {
+    width: 100%;
+    border: 1px solid #A63921;
+    margin: 0 auto;
+    margin-top: 45px;
+    max-width: 1360px;
+}
+
+
+/****************************************************************
+*************************CSS 3D BANNER***************************
+***************************************************************/
+
+.banner-3d {
+    min-width: 85%;
+    min-height: 500px;
+}
+
+.banner-3d-container-slide {
+    margin-top: 100px;
+    height: 600px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.banner-3d-title h2 {
+    font-weight: 795;
+    color: #A63921;
+    font-size: 50px;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-top: 55px;
+    text-align: center;
+}
+
+.banner-3d-img-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 600px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 854px;
+    transition: 0.5s;
+}
+
+.banner-3d-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 55px;
+    transform-style: preserve-3d;
+}
+
+.banner-text-topo h2 {
+    font-weight: 100;
+    font-size: 35px;
+    color: #F2F2F2;
+    line-height: 100%;
+}
+
+.banner-text-topo h3 {
+    font-size: 71px;
+    font-weight: bold;
+    line-height: 100%;
+    max-width: 250px;
+    color: #F2F2F2;
+    margin-top: 20px;
+}
+
+.banner-text-baixo {
+    position: absolute;
+    bottom: 55px;
+    right: 55px;
+}
+
+.banner-text-baixo p {
+    font-size: 30px;
+    text-align: right;
+    color: white;
+    font-weight: 100;
+}
+
+.banner-text-baixo a {
+    color: white;
+    width: 100%;
+    max-width: 174px;
+    height: 60px;
+    line-height: 50px;
+    text-transform: capitalize;
+    border-radius: 18px;
+    border: 4px solid #fff;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.banner-3d .line-break {
+    width: 100%;
+    border: 1px solid #A63921;
+    margin: 0 auto;
+    margin-top: 120px;
+    max-width: 1360px;
+}
+
+.banner-3d-container-slide-anima {
+    transform-style: preserve-3d;
+}
+
+.slide-0 {}
+
+.slide-1 {
+    transform: rotateY(25deg) translateX(-150px) translateZ(-300px);
+}
+
+.slide-2 {
+    transform: rotateY(-25deg) translateX(150px) translateZ(-300px);
+}
+
+
+/****************************************************************
+*************************CSS PARTNER COTAINER********************
+****************************************************************/
+
+.partner {
+    min-width: 85%;
+}
+
+.partner-header {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    color: #242B40;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.partner-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 60px;
+    align-items: center;
+    height: 125px;
+    background: #242B40;
+}
+
+.partner-footer h2 {
+    font-size: 56px;
+    color: white;
+}
+
+.partner-footer a {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    height: 85px;
+    line-height: 75px;
+    color: white;
+    width: 100%;
+    max-width: 398px;
+    border: 6px solid #F2F2F2;
+    border-radius: 18px;
+}
+
+.partner-img {
+    height: 578px;
+    margin-bottom: 15px;
+}
+
+.partner .line-break {
+    width: 100%;
+    border: 1px solid #A63921;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 1360px;
+}
+
+.partner-container-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 25px);
+    right: 0;
+    margin: 0 auto;
+    width: calc(100% - 30px);
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.5s;
+}
+
+.partner-img-container:hover>.partner-container-text {
+    top: 50%;
+    background: white;
+    transform: translateY(-50%);
+    width: calc(90% - 40px);
+    height: calc(80% - 80px);
+    ;
+}
+
+.partner-container-text p {
+    opacity: 0;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+.partner-img-container:hover>.partner-container-text p {
+    opacity: 1;
+}
+
+
+/****************************************************************
+*************************CSS ATIVIDADES PRINCIPAIS***************
+****************************************************************/
+
+.principais-atividades {
+    min-width: 85%;
+}
+
+.principais-atividades h1 {
+    font-size: 70px;
+    text-align: center;
+    line-height: 100%;
+    margin-top: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.principais-atividades-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 85px;
+}
+
+.principais-atividades-menu .menu-link {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.principais-atividades-menu .menu-link a {
+    display: block;
+    color: black;
+    font-size: 50px;
+    font-weight: 100;
+    border-right: 1px solid #A63921;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 50px;
+}
+
+.principais-atividades-menu .menu-link:last-child a {
+    border: 0;
+}
+
+
+/****************************************************************
+*************************CSS FACA PARTE**************************
+****************************************************************/
+
+.facaparte {
+    position: relative;
+}
+
+.facaparte-container {
+    background: url("../imagens/facaparteimg.JPG");
+    background-size: cover;
+    background-position: center;
+    padding: 160px 0;
+    position: relative;
+    margin-top: 100px;
+}
+
+.facaparte-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 150px;
+}
+
+.facaparte-container-title {
+    font-size: 96px;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    display: inline-block;
+    z-index: 10;
+}
+
+.facaparte-container-title span {
+    font-size: 162px;
+    line-height: 100%;
+    font-weight: 100;
+    display: block;
+    margin-top: 10px;
+}
+
+.facaparte-button {
+    font-size: 60px;
+    color: white;
+    height: 230px;
+    border: 6px solid #F2F2F2;
+    border-radius: 18px;
+    display: block;
+    line-height: 230px;
+    text-align: center;
+    width: 100%;
+    max-width: 540px;
+    z-index: 10;
+}
+
+
+/***************************************************************
+*************************CSS MAIN INSTALATIONS******************
+****************************************************************/
+
+.main-instalations-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.grade1.lamina::before,
+.grade1.lamina::after,
+.grade6.lamina::before,
+.grade6.lamina::after {
+    background: #A63921;
+}
+
+.grade1 .sublamina:before,
+.grade1 .sublamina:after,
+.grade6 .sublamina:before,
+.grade6 .sublamina:after {
+    background: #A63921;
+}
+
+.grade2.lamina::before,
+.grade2.lamina::after,
+.grade5.lamina::before,
+.grade5.lamina::after {
+    background: #BFB0A3;
+}
+
+.grade2 .sublamina:before,
+.grade2 .sublamina:after,
+.grade5 .sublamina:before,
+.grade5 .sublamina:after {
+    background: #BFB0A3;
+}
+
+.grade3.lamina::before,
+.grade3.lamina::after {
+    background: #242B40;
+}
+
+.grade3 .sublamina:before,
+.grade3 .sublamina:after,
+.grade4 .sublamina:before,
+.grade4 .sublamina:after {
+    background: #242B40;
+}
+
+.grade1 {
+    grid-area: img1;
+}
+
+.grade2 {
+    grid-area: img2;
+}
+
+.grade3 {
+    grid-area: img3;
+}
+
+.grade4 {
+    grid-area: img4;
+}
+
+.grade5 {
+    grid-area: img5;
+}
+
+.grade6 {
+    grid-area: img6;
+}
+
+.instalations-text {
+    position: absolute;
+    bottom: 75px;
+    z-index: 10;
+    left: 165px;
+}
+
+.instalations-text h1 {
+    color: white;
+    font-size: 86px;
+    font-weight: 790;
+    text-transform: uppercase;
+    line-height: 100%;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.main-instalations-img:hover>.instalations-text h1 {
+    opacity: 1;
+}
+
+.instalations-text h1 span {
+    font-size: 41px;
+    display: block;
+    text-transform: none;
+    font-weight: 100;
+    line-height: 100%;
+}
+
+.main-instalations {
+    display: grid;
+    grid-template-areas: 'img1 img1 img2 img2 img3 img3' 'img4 img4 img5 img5 img6 img6';
+    grid-gap: 15px;
+    margin-top: 66px;
+    margin-bottom: 100px;
+    min-width: 85%;
+}
+
+article.main-instalations-img img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-instalations.container::before,
+.main-instalations.container::after {
+    display: none;
+}
+
+.main-instalations-img.lamina:before {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.main-instalations-img.lamina:after {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.main-instalations-img .sublamina:before {
+    -webkit-transform: translateX(0%);
+    transform: translateX(-100%);
+}
+
+.main-instalations-img .sublamina:after {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.main-instalations-img.lamina:hover:before,
+.main-instalations-img.lamina.hover:before {
+    -webkit-transform: skew(45deg) translateX(-50%);
+    transform: skew(45deg) translateX(-50%);
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+.main-instalations-img.lamina:hover:after,
+.main-instalations-img.lamina.hover:after {
+    -webkit-transform: skew(-45deg) translateX(-40%);
+    transform: skew(-45deg) translateX(-40%);
+}
+
+
+/****************************************************************
+*************************CSS LUGAR PARA EVENTOS******************
+****************************************************************/
+
+.lugar-para-eventos {
+    background: url("../imagens/lugarparaeventos.JPG") no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.lugar-para-eventos-text {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 150px 150px;
+}
+
+.lugar-para-eventos-title {
+    font-size: 106px;
+    line-height: 100%;
+    color: white;
+    z-index: 10;
+    max-width: 550px;
+    font-weight: 650;
+}
+
+.lugar-para-eventos-button {
+    display: block;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 100%;
+    height: 130px;
+    line-height: 120px;
+    border: 6px solid #F2F2F2;
+    border-radius: 18px;
+    text-align: center;
+    width: 100%;
+    max-width: 536px;
+    position: relative;
+    top: 50px;
+    z-index: 10;
+}
+
+
+/****************************************************************
+*************************CSS HISTÓRIA DO PETRO*******************
+****************************************************************/
+
+.petro-history.container {
+    min-width: 85%;
+    padding: 95px 0;
+}
+
+.petro-history-text h1 {
+    font-size: 70px;
+    line-height: 100%;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 790;
+    margin-bottom: 50px;
+}
+
+.petro-history.container p {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+
+/****************************************************************
+*************************Pagina Contatos*******************
+****************************************************************/
+
+.Box-1 {
+    text-align: center;
+}
+
+.Box-1 .titulo {
+    font-size: 40px;
+    padding: 68px 0px 68px 0px;
+}
+
+.subbox {
+    padding-bottom: 35px;
+}
+
+.subbox .subtitulo {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.Box-1 .line-break {
+    width: 100%;
+    border: 1px solid #A63921;
+    margin: 0 auto;
+    margin-top: 45px;
+    max-width: 1360px;
+}
+
+.Box-2 {
+    text-align: center;
+}
+
+.Box-2 .titulo2 {
+    font-size: 40px;
+    padding: 68px 0px 68px 0px;
+}
+
+.Box-2 .colunas {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.Box-2 .coluna1 {
+    width: 600px;
+}
+
+.Box-2 .coluna2 {
+    width: 600px;
+}
